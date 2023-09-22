@@ -1,0 +1,132 @@
+/*geral*/
+
+main{
+  width: 250t px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+    h2{
+      color: white;
+      padding-left: 30px;
+  }
+  
+  
+    
+  
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+  }
+   
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding-right: 300px;
+  margin: 60px;
+  width: 100px;
+  height: 400px;
+  transition: all 0.3s ease-out;
+  background-color: #1ad5c6;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color:#1ad5c6;
+    font-size: 16px;
+  }
+   
+  .image {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  .blue {
+    border-left: 3px solid #4895ff;
+  }
+   
+  .label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: grid;
+    border: 0;
+    border-bottom: 3px solid #0d009c;
+   margin-bottom: 10px;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 3px;
+ }
+ .label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+ }
+ .card2{
+  color: #fafafa;
+  width: 250px;
+  padding-left:10px;
+
+}
+ button{
+    background-color:rgb(16, 60, 60) ;
+    border-color: #090a7a;
+    color:#feffff;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+  }
+  
+  a:hover{
+    background-color: rgb(14, 130, 197);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+  }
+  .content{ 
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  table{
+    border-collapse: collapse;
+      border : 1px solid #ccc;
+      height: 50px;
+      width: 350px;
+
+   
+  }
+    table th {
+    background-color: rgb(214, 214, 214);}
+    table th, td {
+    padding: 1px 5px;
+    text-align: left;
+    }
+      table td img {
+ width: 20px;
+      }
+    .center {
+    
+    text-align: center;
+    ;}
