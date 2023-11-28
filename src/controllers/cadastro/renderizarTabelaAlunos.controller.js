@@ -22,16 +22,25 @@ function renderizarTabelaAlunos() {
   
         botaoExcluir.addEventListener("click", () => {
           const index = botaoExcluir.getAttribute("data-index");
-          const alunoExcluido = alunos[index];
+          const alunoExcluido = alunos[0];
   
           // Exibe um alerta com informações do aluno que será excluído
-          alert(`Excluir aluno: ${alunoExcluido.nome}`);
-  
-          // Remove o aluno do array
-          alunos.splice(index, 1);
+        
+          var resultado = confirm(`Excluir aluno: ${alunoExcluido.nome}`);
+          if (resultado == true) {
+
+            alert(`Excluir aluno: ${alunoExcluido.nome}`);  
+            alunos.shift(index,1);
+            
+                
+          }
+          else{
+              alert(`Você desistiu de excluir o item " ${alunoExcluido.nome}`);
+          }
+         
+        renderizarTabelaAlunos();
+       
           
-          // Atualize a tabela após a exclusão
-          renderizarTabelaAlunos();
         });
       }
   

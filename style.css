@@ -1,132 +1,104 @@
 /*geral*/
-
-main{
-  width: 250t px;
-  padding-left: 60px;
-  padding-right: 60px;
+*{
+  margin: 0;  /**/
+  padding: 0; /**/
+  box-sizing: border-box; /* colocado para manter a margen do coteiner caso presise de prenchimento*/
 }
 
 
-    h2{
-      color: white;
-      padding-left: 30px;
-  }
-  
-  
-    
-  
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #fafafa;
-  }
-   
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
+body * {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color)/* cor da ketra*/;
+  
+}
+#Principal{
+  text-align: center;/*centraliza coisas que são por padrão iline, como as Img, que é o caso*/
+    padding: 24px ;/* prenchimeto*/
     
-.card {
-  border-radius: 5px;
-  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-  padding-right: 300px;
-  margin: 60px;
-  width: 100px;
-  height: 400px;
-  transition: all 0.3s ease-out;
-  background-color: #1ad5c6;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-  }
-   
-  .card p {
-    color:#1ad5c6;
-    font-size: 16px;
-  }
-   
-  .image {
-    float: right;
-    max-width: 64px;
-    max-height: 64px;
-  }
-  .blue {
-    border-left: 3px solid #4895ff;
-  }
-   
-  .label-float input {
-    width: 100%;
-    padding: 5px 5px;
-    display: grid;
-    border: 0;
-    border-bottom: 3px solid #0d009c;
-   margin-bottom: 10px;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 3px;
- }
- .label-float{
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
- }
- .card2{
-  color: #fafafa;
+}
+.card1{
+  background-color:  rgba(142, 68, 142, 0.704);  
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  margin: 56px auto 0px;
+ padding: 0 24px;;
+ border-radius: 8px;
+
+ 
+ 
+}
+.cadastro{
+  border: 1px solid rgb(251, 0, 255);
+  align-items: center;
   width: 250px;
-  padding-left:10px;
-
+  height: 550px;
+  margin-top: 50px ;
+  padding: 60px;
+  inline-size: auto;
+  align-items: center;
 }
- button{
-    background-color:rgb(16, 60, 60) ;
-    border-color: #090a7a;
-    color:#feffff;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all .4s ease-out;
-  }
+#Adicionar{
+  border: 1px solid rgb(251, 0, 255);
+    text-align:center;
+  padding: 10px 24px;
+}
+button{
+  background-color:rgb(16, 107, 107) ;
+  border-color: #090a7a;
+  color:#feffff;
+  padding: 7px;
+  font-weight: bold;
+  height:60px;
+  width:200px;
+  font-size: 12pt;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
   
-  a:hover{
-    background-color: rgb(14, 130, 197);
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all .4s ease-out;
-  }
-  .content{ 
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  table{
-    border-collapse: collapse;
-      border : 1px solid #ccc;
-      height: 50px;
-      width: 350px;
+}
+ul{
+  
+  
+  list-style-type: none;
+  list-style: none;/* tira o ponto das lista*/
+  display: flex;/* separa os coteudo das linhas */
+  flex-direction: column; /*colaca o coteudo em culuna e não um ao lado do outro*/
+  gap: 16px; /*epaçao entre os conteudos*/  
+  padding:  24px 0;   
+}
 
+ 
    
-  }
-    table th {
-    background-color: rgb(214, 214, 214);}
-    table th, td {
-    padding: 1px 5px;
-    text-align: left;
-    }
-      table td img {
- width: 20px;
-      }
-    .center {
-    
-    text-align: center;
-    ;}
+.label-float input {
+
+  width: 100%;
+  padding: 5px 5px;
+  display: grid;
+  border: 0;
+  border-bottom: 3px solid #0d009c;
+ margin-bottom: 10px;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content:center; /* centralizar o conteudo*/
+  padding: 10px 24px;/*preenchimento do conteudo,por isso não presisa de autura nem largura */
+  
+  border-radius: 2px;/* aredodar */
+  backdrop-filter:blur(4px);/*tranparencia*/
+  -webkit-backdrop-filter:blur(4px) ;
+  text-decoration: none;
+  font-weight: 500;
+}
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+}
+
