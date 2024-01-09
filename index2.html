@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card1">
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th class="center">Idade</th>
+                <th>Email</th>
+                <th>Nome</th>
+                <th class="center">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaAlunos">
+              <!-- Linhas da tabela serão adicionadas aqui -->
+            </tbody>
+          </table>
+        </div>
+        <script src="script.js"></script>
+        <script src="src/models/Cadastro.model.js"></script>
+        <script src="src/controllers/cadastro/createcadastro.controller.js"></script>
+        <script src="/src/controllers/cadastro/renderizarTabelaAlunos.controller.js"></script>
+</body>
+</html>

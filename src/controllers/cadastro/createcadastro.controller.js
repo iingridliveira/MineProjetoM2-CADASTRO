@@ -6,6 +6,7 @@ botaoAdicionar.addEventListener('click', () => {
     if (idade && nome && email) {
       const novoAluno = new Aluno(idade, nome, email);
       alunos.push(novoAluno);
+      
   
       // Limpar os campos de entrada
       inputIdade.value = "";
@@ -16,5 +17,6 @@ botaoAdicionar.addEventListener('click', () => {
       renderizarTabelaAlunos();
     } else {
       alert("Preencha todos os campos.");
+      
     }
   });

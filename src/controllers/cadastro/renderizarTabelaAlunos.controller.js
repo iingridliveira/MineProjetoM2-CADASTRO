@@ -22,7 +22,7 @@ function renderizarTabelaAlunos() {
   
         botaoExcluir.addEventListener("click", () => {
           const index = botaoExcluir.getAttribute("data-index");
-          const alunoExcluido = alunos[0];
+          const alunoExcluido = alunos[i];
   
           // Exibe um alerta com informações do aluno que será excluído
         
@@ -30,7 +30,7 @@ function renderizarTabelaAlunos() {
           if (resultado == true) {
 
             alert(`Excluir aluno: ${alunoExcluido.nome}`);  
-            alunos.shift(index,1);
+            alunos.shift(index);
             
                 
           }
